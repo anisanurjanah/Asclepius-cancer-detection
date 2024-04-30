@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Asclepius</string>
+
+    <string name="home">Home</string>
+    <string name="screening">Screening</string>
+    <string name="article">Article</string>
+    <string name="profile">Profile</string>
+    <string name="me">Me</string>
+    <string name="history">History</string>
+    <string name="analyze_result">Analyze Result</string>
+    <string name="detail_article">Detail Article</string>
+
+    <string name="article_image">Article Image</string>
+    <string name="article_title">Title</string>
+    <string name="article_description">Description</string>
+    <string name="article_source">Source</string>
+    <string name="article_author">Author</string>
+    <string name="by_string_article_author">By @string/article_author</string>
+    <string name="article_published">PublishedAt</string>
+    <string name="article_content">Content</string>
+    <string name="article_url">URL</string>
+    <string name="article_explore">Explore articles</string>
+    <string name="explore_more_article">Explore more articles</string>
+    <string name="tv_article_url">Click link below to see article detail</string>
+
+    <string name="history_label">Label</string>
+    <string name="history_date">Date</string>
+    <string name="history_time">Time</string>
+    <string name="history_image">History Image</string>
+
+    <string name="profile_name">Anisa Nurjanah</string>
+    <string name="profile_id">ID: 0123456789123456</string>
+
+    <string name="camera_x">CameraX</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Choose from gallery</string>
+    <string name="analyze">Analyze</string>
+    <string name="result">Result</string>
+    <string name="result_image">Result image</string>
+    <string name="result_label">Result Label</string>
+    <string name="result_score">Result Score</string>
+    <string name="tv_result">The result is:</string>
+    <string name="text_cancer">The outcome of the assessment suggests the presence of cancer.</string>
+    <string name="text_no_cancer">Based on the results, it appears there\'s no indication of cancer</string>
+    <string name="motivated_text_cancer">When faced with trials, it\'s a call to emerge stronger than before. Don\'t let the diagnosis dictate your future, but let your spirit shape your journey. Keep going!</string>
+    <string name="motivated_text_no_cancer">Thank you, God, for this good news. It\'s proof that amidst all uncertainty, there\'s still light at the end of the tunnel. Never lose hope and keep moving forward with faith that every good thing will come in its time. Keep going!</string>
+    <string name="screening_button">Click here to start screening</string>
+
+    <string name="image_not_choose">Please select an image first.</string>
+    <string name="image_not_choose_crop_button">Please select an image before starting the cropping process.</string>
+    <string name="image_failed_to_crop">Image failed to crop.</string>
+    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="camera_feature_failed">Camera features are not yet available.</string>
+
+    <string name="article_not_available">Article not available.</string>
+    <string name="history_not_available">History not available.</string>
+    <string name="result_not_available">Result not available.</string>
+
+    <string name="no_title_available">No title available</string>
+    <string name="no_source_available">No source available</string>
+    <string name="no_author_available">No author available</string>
+    <string name="no_description_available">No description available</string>
+    <string name="no_published_date_available">No published date available</string>
+    <string name="no_content_available">No content available</string>
+    <string name="no_link_available">No link available</string>
+
+    <string name="notifications_rejected">Notifications permission rejected</string>
+    <string name="notifications_title">Successfully obtained the screening results</string>
+    <string name="notifications_message">The result of screening has been successful. Tap here to see screening history.</string>
+
+    <string name="dark_mode">Dark Mode</string>
+    <string name="share_bar">Share</string>
+    <string name="splash_screen_icon">Splash Screen Icon</string>
+
+    <string name="crop_button">Crop Button</string>
+    <string name="delete_button">Delete Button</string>
+
+    <string name="text_screening_button">Tap the menu below to start screening.</string>
+    <string name="text_article_button">Tap the menu below to start more article.</string>
+
+    <string name="setting">Setting</string>
+    <string-array name="data_setting_profile">
+        <item>My Profile</item>
+        <item>Account Security</item>
+        <item>Verification</item>
+    </string-array>
+    <string-array name="data_setting_app">
+        <item>Help Center</item>
+        <item>Terms &amp; Conditions</item>
+        <item>About Us</item>
+    </string-array>
+</resources>

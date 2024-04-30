@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:layout_marginBottom="64dp"
+    tools:context=".view.fragment.ProfileFragment">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/profile_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_view"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/profile_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintStart_toEndOf="@+id/profile_img"
+        app:layout_constraintTop_toTopOf="@+id/profile_view" />
+
+    <TextView
+        android:id="@+id/profile_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/profile_id"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_view"
+        app:layout_constraintStart_toEndOf="@+id/profile_img" />
+
+    <View
+        android:id="@+id/setting_view_border"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_view" />
+
+    <View
+        android:id="@+id/setting_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="?attr/colorOnSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/setting_view_border"
+        app:layout_constraintEnd_toEndOf="@+id/setting_view_border"
+        app:layout_constraintStart_toStartOf="@+id/setting_view_border"
+        app:layout_constraintTop_toTopOf="@+id/setting_view_border" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_settings_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/setting_view"
+        app:layout_constraintStart_toStartOf="@+id/setting_view"
+        app:layout_constraintTop_toTopOf="@+id/setting_view" />
+
+    <View
+        android:id="@+id/hr_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dark_mode"
+        app:layout_constraintTop_toBottomOf="@+id/rv_settings_profile" />
+
+    <TextView
+        android:id="@+id/tv_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dark_mode"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="@+id/setting_view"
+        app:layout_constraintTop_toBottomOf="@+id/hr_1" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toTopOf="@+id/hr_2"
+        app:layout_constraintEnd_toEndOf="@+id/setting_view"
+        app:layout_constraintTop_toBottomOf="@+id/hr_1" />
+
+    <View
+        android:id="@id/hr_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toTopOf="@+id/rv_settings_app"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dark_mode" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_settings_app"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/setting_view"
+        app:layout_constraintStart_toStartOf="@+id/setting_view"
+        app:layout_constraintTop_toBottomOf="@+id/hr_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

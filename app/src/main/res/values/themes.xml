@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Asclepius" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/vermin_brown</item>
+        <item name="colorOnPrimary">@color/prestige_blue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/vermin_brown</item>
+        <item name="colorSecondaryVariant">@color/prestige_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Asclepius" parent="Base.Theme.Asclepius" />
+
+    <style name="ToolbarTitleText" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="ToolbarTitleTextHome" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vermin_brown</item>
+    </style>
+</resources>

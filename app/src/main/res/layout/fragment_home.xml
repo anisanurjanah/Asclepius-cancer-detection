@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="56dp"
+    android:layout_marginBottom="64dp"
+    tools:context=".view.fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:indicatorColor="?attr/colorPrimaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/home_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="?attr/colorPrimaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
+
+        <ImageButton
+            android:id="@+id/img_screening_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_upload_file_24"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/home_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/home_view"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/screening_button" />
+
+        <TextView
+            android:id="@+id/tv_screening_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/screening_button"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_screening_button" />
+
+        <TextView
+            android:id="@+id/article_explore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/article_explore"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_view" />
+
+        <View
+            android:id="@+id/hr_1"
+            android:layout_width="180dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/colorPrimaryVariant"
+            app:layout_constraintBottom_toTopOf="@+id/rv_articles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_explore" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_articles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hr_1" />
+
+        <TextView
+            android:id="@+id/article_not_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/article_not_available"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_articles"
+            app:layout_constraintEnd_toEndOf="@+id/rv_articles"
+            app:layout_constraintStart_toStartOf="@+id/rv_articles"
+            app:layout_constraintTop_toBottomOf="@+id/hr_1" />
+
+        <Button
+            android:id="@+id/article_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:text="@string/explore_more_article"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_articles" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
